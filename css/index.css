@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  background: rgb(31, 98, 243);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* --------------------------------------------------------------------------- */
+
+/* --------------------------------------------------------------------------- */
+.container {
+  border: 2px solid #fff;
+  padding: 30px 40px;
+  width: 40%;
+  min-width: 265px;
+}
+
+.new-task-container {
+  background-color: #fff;
+  padding: 30px 20px;
+  border-radius: 5px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  display: flex;
+}
+
+.new-task-container input {
+  flex: 3;
+  font-size: 1rem;
+  border: 2px solid #d1d3d4;
+  border-radius: 5px;
+  padding: 12px;
+  font-weight: 500;
+}
+
+.new-task-container input:focus {
+  outline: none;
+  border-color: #41b883;
+}
+
+.new-task-button {
+  flex: 1;
+  border-radius: 5px;
+  font-weight: 500;
+  height: 100%;
+  font-size: 1rem;
+  border: none;
+  background-color: #41b883;
+  color: #fff;
+  padding: 12px;
+  margin-left: 12px;
+  cursor: pointer;
+}
+
+.scroll-content{
+  margin-top: 60px;
+}
+
+.tasks-container {
+  background-color: #fff;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+  margin-top: 6px;
+}
+
+.task-item i {
+  background-color: #41b883;
+  color: #fff;
+  padding: 12px;
+  border-radius: 5px;
+}
+
+.task-item i:hover {
+  cursor: pointer;
+}
+/* --------------------------------------------------------------------------- */
+
+/* estilo de erro e conclusao */
+.error {
+  border: 2px solid red !important;
+}
+
+.error::placeholder {
+  color: red;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+/* --------------------------------------------------------------------------- */
+
+/* media screen */
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 59%; 
+  } 
+}
+
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 56%; 
+  } 
+}
+
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 100%; 
+  } 
+}
+
+@media (max-width: 400px) {
+  .new-task-container {
+    display: grid; 
+    align-items: center;
+  } 
+
+  .new-task-button {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 2.5px;
+  } 
+}
+
+@media (max-width: 800px) {
+  .container{
+    height: 90%;
+    width: 90%;
+  }
+
+  .new-task-container{
+    margin-top: 65px;
+  }
+}
