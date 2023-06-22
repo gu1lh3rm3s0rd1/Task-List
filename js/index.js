@@ -1,47 +1,47 @@
-  const inputElement = document.querySelector(".new-task-input");
-  const addTaskButton = document.querySelector(".new-task-button");
-  const tasksContainer = document.querySelector(".tasks-container");
+const inputElement = document.querySelector(".new-task-input");
+const addTaskButton = document.querySelector(".new-task-button");
+const tasksContainer = document.querySelector(".tasks-container");
 
-  //valida se o espaço estiver em branco, n deixa inserir tasks
-  const validateInput = () => inputElement.value.trim().length > 0;
+//valida se o espaço estiver em branco, n deixa inserir tasks
+const validateInput = () => inputElement.value.trim().length > 0;
 
-  //se o input n for valido ele fica vermelho e nao add tasks
-  const handleAddTask = () => {
-    const inputIsValid = validateInput();
+//se o input n for valido ele fica vermelho e nao add tasks
+const handleAddTask = () => {
+  const inputIsValid = validateInput();
 
-    console.log(inputIsValid);
+  console.log(inputIsValid);
 
-    if (!inputIsValid) {
-      return inputElement.classList.add("error");
-    }
+  if (!inputIsValid) {
+    return inputElement.classList.add("error");
+  }
 
-    //div das tasks
-    const taskItemContainer = document.createElement("div");
-    taskItemContainer.classList.add("task-item");
+  //div das tasks
+  const taskItemContainer = document.createElement("div");
+  taskItemContainer.classList.add("task-item");
 
-    //conteudo das tasks
-    const taskContent = document.createElement("p");
-    taskContent.innerText = inputElement.value;
+  //conteudo das tasks
+  const taskContent = document.createElement("p");
+  taskContent.innerText = inputElement.value;
 
-    //insere a prox task como 'filha' de alguma existente, fica em ordem de insercao da primeria inserida e assim por diante
-    taskContent.addEventListener("click", () => handleClick(taskContent));
+  //insere a prox task como 'filha' de alguma existente, fica em ordem de insercao da primeria inserida e assim por diante
+  taskContent.addEventListener("click", () => handleClick(taskContent));
 
-    //valida qual item que o usuario quer excluir
-    const deleteItem = document.createElement("i");
-    deleteItem.classList.add("far");
-    deleteItem.classList.add("fa-trash-alt");
+  //valida qual item que o usuario quer excluir
+  const deleteItem = document.createElement("i");
+  deleteItem.classList.add("far");
+  deleteItem.classList.add("fa-trash-alt");
 
-    deleteItem.addEventListener("click", () =>
-      handleDeleteClick(taskItemContainer, taskContent)
-    );
+  deleteItem.addEventListener("click", () =>
+    handleDeleteClick(taskItemContainer, taskContent)
+  );
 
-    taskItemContainer.appendChild(taskContent);
-    taskItemContainer.appendChild(deleteItem);
-    tasksContainer.appendChild(taskItemContainer);
+  taskItemContainer.appendChild(taskContent);
+  taskItemContainer.appendChild(deleteItem);
+  tasksContainer.appendChild(taskItemContainer);
 
-    inputElement.value = "";
+  inputElement.value = "";
 
-    updateLocalStorage();
+  updateLocalStorage();
 };
 
 //realiza um loop para marcar a tarefa clicada, ou seja, concluiu uma tarefa, quando clicar nela uma barrinha sobre a task é inserida
