@@ -36,7 +36,7 @@ O Agendador de Tarefas é uma aplicação web desenvolvida com JavaScript que pe
 
 ## Contribuição
 
-Contribuições são bem-vindas! Se você deseja melhorar ou adicionar novas funcionalidades ao projeto Buscador de Produtos via API, sinta-se à vontade para fazer um fork do repositório e enviar um pull request.
+Contribuições são bem-vindas! Se você deseja melhorar ou adicionar novas funcionalidades ao projeto, sinta-se à vontade para fazer um fork do repositório e enviar um pull request.
 
 ## Autor
 
