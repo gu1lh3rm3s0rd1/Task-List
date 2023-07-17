@@ -1,13 +1,13 @@
 # Lista de Tarefas
 
-Porjeto simples e fácil com HTML, CSS E JavaScript, criei uma div com um botão e um input para add as tarefas, uma div que guardaria as tarefas adicionadas e uma div principal que
-uniu as duas anteriores.
-Usei CSS para estilizar a pagina e alinhar todos os elementos ao centro para uma melhor vizualização.
-Com JavaScript criei funções para adição, validação e inserção, e deleção das tarefas
+O Agendador de Tarefas é uma aplicação web desenvolvida com JavaScript que permite aos usuários agendar e gerenciar suas tarefas de forma eficiente. Com uma interface simples e intuitiva, os usuários podem adicionar, editar, excluir e visualizar suas tarefas com facilidade.
 
 ## Descrição do Projeto
 
-O Agendador de Tarefas é uma aplicação web desenvolvida com JavaScript que permite aos usuários agendar e gerenciar suas tarefas de forma eficiente. Com uma interface simples e intuitiva, os usuários podem adicionar, editar, excluir e visualizar suas tarefas com facilidade.
+Porjeto simples e fácil com HTML, CSS E JavaScript, criei uma div com um botão e um input para add as tarefas, uma div que guardaria as tarefas adicionadas e uma div principal que
+uniu as duas anteriores.
+Usei CSS para estilizar a pagina e alinhar todos os elementos ao centro para uma melhor vizualização.
+Com JavaScript criei funções para adição, validação e inserção, e deleção das tarefas.
 
 ## Funcionalidades
 
@@ -21,6 +21,14 @@ O Agendador de Tarefas é uma aplicação web desenvolvida com JavaScript que pe
 
 - HTML5, CSS3 e JavaScript para a estrutura, estilo e funcionalidade da aplicação.
 
+## Demonstração
+
+![Texto Alternativo da Imagem](/imagens/print3.PNG)
+
+## Link do Projeto
+
+[Confira o Projeto](https://minhagenda.netlify.app/)
+
 ## Como Usar
 
 1. Faça o download dos arquivos do projeto ou clone o repositório.
@@ -29,10 +37,6 @@ O Agendador de Tarefas é uma aplicação web desenvolvida com JavaScript que pe
 4. Para adicionar uma nova tarefa, clique no botão "Adicionar Tarefa" e preencha os campos obrigatórios (título e data de conclusão) no formulário exibido.
 5. Para editar ou excluir uma tarefa existente, clique nos ícones de edição ou lixeira ao lado da tarefa correspondente na lista.
 6. Marque uma tarefa como concluída ou não concluída clicando no título da tarefa.
-
-## Demonstração
-
-![Texto Alternativo da Imagem](/imagens/print3.PNG)
 
 ## Contribuição
 
